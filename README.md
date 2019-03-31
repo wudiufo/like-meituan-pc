@@ -165,7 +165,7 @@ npm i sass-loader node-sass
 
 需求分析（模板设计）
 
-![](J:\vuemeituanstack\imgs\360截图20190323230901440.jpg)
+![](imgs\360截图20190323230901440.jpg)
 
 
 
@@ -173,13 +173,13 @@ npm i sass-loader node-sass
 
 
 
-![](J:\vuemeituanstack\imgs\360截图20190325191810183.jpg)
+![](imgs\360截图20190325191810183.jpg)
 
-![](J:\vuemeituanstack\imgs\360截图20190325192150573.jpg)
+![](imgs\360截图20190325192150573.jpg)
 
-![](J:\vuemeituanstack\imgs\360截图20190325192240550.jpg)
+![](imgs\360截图20190325192240550.jpg)
 
-![](J:\vuemeituanstack\imgs\360截图20190325192638189.jpg)
+![](imgs\360截图20190325192638189.jpg)
 
 
 
@@ -201,17 +201,17 @@ redis-server
 
 城市服务接口
 
-![](J:\vuemeituanstack\imgs\360截图20190326165856164.jpg)
+![](imgs\360截图20190326165856164.jpg)
 
 查询类接口
 
-![](J:\vuemeituanstack\imgs\360截图20190326170044530.jpg)
+![](imgs\360截图20190326170044530.jpg)
 
-![](J:\vuemeituanstack\imgs\360截图20190326170147242.jpg)
+![](imgs\360截图20190326170147242.jpg)
 
-![](J:\vuemeituanstack\imgs\360截图20190326173542095.jpg)
+![](imgs\360截图20190326173542095.jpg)
 
-![](J:\vuemeituanstack\imgs\360截图20190326180530720.jpg)
+![](imgs\360截图20190326180530720.jpg)
 
 a3c9fe0782107295ee9f1709edd15218
 
@@ -222,32 +222,33 @@ npm i lodash
 npm i js-pinyin
 ```
 
-![](J:\vuemeituanstack\imgs\360截图20190329195111426.jpg)
+![](imgs\360截图20190329195111426.jpg)
 
-![](J:\vuemeituanstack\imgs\360截图20190329202141815.jpg)
+![](imgs\360截图20190329202141815.jpg)
 
-![](J:\vuemeituanstack\imgs\360截图20190330204014768.jpg)
+![](imgs\360截图20190330204014768.jpg)
 
-![](J:\vuemeituanstack\imgs\360截图20190330204253430.jpg)
+![](imgs\360截图20190330204253430.jpg)
 
-![](J:\vuemeituanstack\imgs\360截图20190330204451939.jpg)
+![](imgs\360截图20190330204451939.jpg)
 
-![](J:\vuemeituanstack\imgs\360截图20190330204641731.jpg)
+![](imgs\360截图20190330204641731.jpg)
 
 完成效果图
 
-![](J:\vuemeituanstack\imgs\首页.png)
+![](imgs\首页.png)
 
-![](J:\vuemeituanstack\imgs\register.png)
+![](imgs\register.png)
 
-![](J:\vuemeituanstack\imgs\login.png)
+![](imgs\login.png)
 
-![](J:\vuemeituanstack\imgs\products.png)
+![](imgs\products.png)
 
-![](J:\vuemeituanstack\imgs\detail.png)
+![](imgs\detail.png)
 
-![](J:\vuemeituanstack\imgs\cart.png)
+![](imgs\cart.png)
 
-![](J:\vuemeituanstack\imgs\order.png)
+![](imgs\order.png)
 
-![](J:\vuemeituanstack\imgs\changecity.png)
+![](imgs\changecity.png)
+
