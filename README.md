@@ -1,3 +1,31 @@
+
+
+
+
+
+
+
+
+
+
+
+
+## 用postman 测接口
+
+```js
+http://localhost:3000/geo/getPosition
+http://localhost:3000/geo/menu
+http://localhost:3000/geo/province
+http://localhost:3000/search/top?input=火锅&city=天津&sign=a3c9fe0782107295ee9f1709edd15218
+http://localhost:3000/search/hotPlace?city=天津&sign=a3c9fe0782107295ee9f1709edd15218
+http://localhost:3000/category/crumbs?city=北京
+http://localhost:3000/search/resultsByKeywords?city=广州&keyword=广州流溪河国家森林公园
+```
+
+
+
+----------------------
+
 # meituan
 
 > My superb Nuxt.js project
@@ -76,7 +104,7 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 
 # 一
 
-初始化项目
+## 初始化项目
 
 ```bash
 npx create-nuxt-app meituan
@@ -105,7 +133,7 @@ To get started:
         npm start
 ```
 
-兼容es6语法，配置
+#### 兼容es6语法，配置
 
 ```js
 在package.json中，在dev和start后加 `--exec babel-node`
@@ -128,7 +156,7 @@ To get started:
 }
 ```
 
-支持 sass 编译，执行命令 
+支持 sass 编译，安装 
 
 ```bash
 npm i sass-loader node-sass
@@ -163,7 +191,7 @@ npm i sass-loader node-sass
 
 ## 首页开发
 
-需求分析（模板设计）
+#### 首页需求分析（模板设计）
 
 ![](./imgs/360截图20190323230901440.jpg)
 
@@ -171,13 +199,17 @@ npm i sass-loader node-sass
 
 
 
-
+#### 首页需求分析（数据结构设计）
 
 ![](./imgs/360截图20190325191810183.jpg)
 
 ![](./imgs/360截图20190325192150573.jpg)
 
+### 腾讯邮箱服务设置，用于通过邮箱接收邮箱验证码
+
 ![](./imgs/360截图20190325192240550.jpg)
+
+### 服务端接口设计（用户类接口） `server/interface/users.js`
 
 ![](./imgs/360截图20190325192638189.jpg)
 
@@ -199,21 +231,45 @@ npm i crypto-js
 redis-server
 ```
 
-城市服务接口
+### 城市服务类接口  `server/interface/geo.js`
 
 ![](./imgs/360截图20190326165856164.jpg)
 
-查询类接口
+### 查询类接口  `server/interface/search.js`
 
 ![](./imgs/360截图20190326170044530.jpg)
+
+## 导入数据到 mongodb
+
+```bash
+//进入到 db 目录，把准备好的数据导入到数据库
+cd db 
+mongoimport -d student -c areas areas.dat
+mongoimport -d student -c category category.dat
+mongoimport -d student -c cities cities.dat
+mongoimport -d student -c maps maps.dat
+mongoimport -d student -c menus menus.dat
+mongoimport -d student -c pois pois.dat
+mongoimport -d student -c provinces provinces.dat
+mongoimport -d student -c regions regions.dat
+mongoimport -d student -c topsearches topsearches.dat
+mongoimport -d student -c position position.dat
+mongoimport -d student -c resultsbykeywords resultsbykeywords.dat
+mongoimport -d student -c products products.dat
+
+```
+
+
 
 ![](./imgs/360截图20190326170147242.jpg)
 
 ![](./imgs/360截图20190326173542095.jpg)
 
+### 线上接口
+
 ![](./imgs/360截图20190326180530720.jpg)
 
-a3c9fe0782107295ee9f1709edd15218
+
 
 http://cp-tools.cn/sign
 
@@ -222,11 +278,17 @@ npm i lodash
 npm i js-pinyin
 ```
 
+### 详情页开发需求分析    `pages/detail.vue`  ,`components/detail` 
+
 ![](./imgs/360截图20190329195111426.jpg)
 
 ![](./imgs/360截图20190329202141815.jpg)
 
+### 购物车页面需求分析     `pages/cart.vue`  ,`components/cart`
+
 ![](./imgs/360截图20190330204014768.jpg)
+
+### 订单页面需求分析  `pages/order.vue`, `components/order`
 
 ![](./imgs/360截图20190330204253430.jpg)
 
@@ -234,7 +296,9 @@ npm i js-pinyin
 
 ![](./imgs/360截图20190330204641731.jpg)
 
-完成效果图
+-----------------------------------------------
+
+# 完成运行效果图
 
 ![](./imgs/首页.png)
 
